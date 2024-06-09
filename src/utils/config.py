@@ -6,7 +6,7 @@ def parse_args_llama():
 
     parser.add_argument("--model_name", type=str, default='graph_llm')
     parser.add_argument("--project", type=str, default="projection")
-    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--seed", type=int, default=3)
 
     parser.add_argument("--dataset", type=str, default='expla_graphs')
     parser.add_argument("--lr", type=float, default=1e-5)
