@@ -1,9 +1,5 @@
 ## GRAG: Graph Retrieval-Augmented Generation
 
-```
-# [![arXiv](https://img.shields.io/badge/arXiv-2402.07630-b31b1b.svg)](https://arxiv.org/abs/2405.16506)
-```
-
 Naive Retrieval-Augmented Generation (RAG) methods are not aware of the topological information of the retrieved documents / knowledge graphs, and using only text information cannot solve graph question answering scenarios:
 <img src="figs/intro.png">
 
