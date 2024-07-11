@@ -34,3 +34,9 @@ python train.py --dataset expla_graphs --model_name graph_llm --llm_frozen False
   year={2024}
 }
 ```
+
+## Acknowledgements
+
+- Thanks to the [gpt-fast](https://github.com/pytorch-labs/gpt-fast) project for its code.
+- Thanks to the [G-Retriever](https://github.com/XiaoxinHe/G-Retriever) contributors for their valuable work and open source contributions.
+
