@@ -137,6 +137,21 @@ def hard_prompt(graph, nodes, edges, node_id, k=1):
             description += f"\n{sampled_nodes.loc[node, 'node_attr']} is connected to:"
         node_descriptions[node] = description
     flatten_graph = "\n".join(node_descriptions.values())
-    print(flatten_graph)
 
     return flatten_graph, tree_graph
+
+def edges_prompt(graph, nodes, edges, node_id, k=1):
+    _, tree_graph = hard_prompt(graph, nodes, edges, node_id, k)
+    
+    edge_index = tree_graph.edge_index.t().numpy()
+    text_nodes = tree_graph.text_nodes
+    text_edges = tree_graph.text_edges
+
+    textual_edges = []
+    for src, dst in edge_index:
+        src_attr = text_nodes.loc[src, 'node_attr']
+        dst_attr = text_nodes.loc[dst, 'node_attr']
+        edge_attr = text_edges.loc[(text_edges['src'] == src) & (text_edges['dst'] == dst), 'edge_attr'].values[0]
+        textual_edges.append(f"{src_attr}, [{edge_attr}], {dst_attr}")
+
+    return "\n".join(textual_edges)
