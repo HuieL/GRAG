@@ -5,9 +5,6 @@
 Naive Retrieval-Augmented Generation (RAG) methods are not aware of the topological information of the retrieved documents / knowledge graphs, and using only text information cannot solve graph question answering scenarios:
 <img src="figs/intro.png">
 
-We introduce **GRAG**, retrieving relevant subgraphs instead of just discrete entities. The generation of LLM is controlled by the query and the relevant text subgraph:
-<img src="figs/flow.png">
-
 ## Try GRAG
 
 ### 1) Data Preprocessing
