@@ -25,6 +25,18 @@ python train.py --dataset expla_graphs --model_name graph_llm
 python train.py --dataset expla_graphs --model_name graph_llm --llm_frozen False
 ```
 
+
+## Citation
+```
+@article{hu2024grag,
+  title={GRAG: Graph Retrieval-Augmented Generation},
+  author={Hu, Yuntong and Lei, Zhihan and Zhang, Zheng and Pan, Bo and Ling, Chen and Zhao, Liang},
+  journal={arXiv preprint arXiv:2405.16506},
+  year={2024}
+}
+```
+
+
 ## Acknowledgements
 
 - Thanks to the [gpt-fast](https://github.com/pytorch-labs/gpt-fast) project for its code.
