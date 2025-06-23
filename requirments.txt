@@ -7,9 +7,9 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 pip install peft
 pip install pandas
 pip install ogb
-pip install transformers
 pip install wandb
 pip install sentencepiece
 pip install torch_geometric
 pip install datasets
 pip install gensim==4.3.0
+pip install transformers==4.30.0
